@@ -17,29 +17,14 @@ st.set_page_config(
     layout="wide"
 )
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-MODEL_PATH = os.path.join(
-    BASE_DIR, "model", "nba_xgboost_model.pkl"
-)
-
-FEATURE_PATH = os.path.join(
-    BASE_DIR, "model", "feature_columns.pkl"
-)
-
-CONFIG_PATH = os.path.join(
-    BASE_DIR, "model", "model_config.json"
-)
-
-DATA_PATH = os.path.join(
-    BASE_DIR, "data", "team_games.csv"
-)
-
-MAPPING_PATH = os.path.join(
-    BASE_DIR, "data", "team_mapping.csv"
-)
-
-RESULTS_PATH = os.path.join(BASE_DIR, "results")
+MODEL_PATH = os.path.join(BASE_DIR, "nba_xgboost_model.pkl")
+FEATURE_PATH = os.path.join(BASE_DIR, "feature_columns.pkl")
+CONFIG_PATH = os.path.join(BASE_DIR, "model_config.json")
+DATA_PATH = os.path.join(BASE_DIR, "team_games.csv")
+MAPPING_PATH = os.path.join(BASE_DIR, "team_mapping.csv")
+RESULTS_PATH = BASE_DIR
 
 
 # --------------------------------------------------
